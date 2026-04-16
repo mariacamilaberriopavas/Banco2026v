@@ -202,7 +202,7 @@ document.getElementById("transactionForm").addEventListener("submit", function(e
                 }
             });
 
-            fetch("http://localhost:8080/api/transactions", {
+            fetch("/api/transactions", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
