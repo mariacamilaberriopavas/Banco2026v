@@ -140,7 +140,7 @@ allowOutsideClick:false,
 didOpen:()=>Swal.showLoading()
 });
 
-fetch("http://localhost:8080/api/customers")
+fetch("/api/customers")
 
 .then(res => res.json())
 
@@ -219,7 +219,7 @@ showCancelButton:true
 
 if(result.isConfirmed){
 
-fetch(`http://localhost:8080/api/customers/${id}`,{
+fetch(`/api/customers/${id}`,{
 method:"DELETE"
 })
 .then(()=>{
@@ -236,7 +236,7 @@ cargarClientes();
 // EDITAR
 function editarCliente(id){
 
-fetch(`http://localhost:8080/api/customers/${id}`)
+fetch(`/api/customers/${id}`)
 .then(res=>res.json())
 .then(c => {
 
@@ -265,7 +265,7 @@ accountNumber:document.getElementById("cuenta").value,
 balance:parseFloat(document.getElementById("balance").value)
 };
 
-fetch(`http://localhost:8080/api/customers/${id}`,{
+fetch(`/api/customers/${id}`,{
 method:"PUT",
 headers:{"Content-Type":"application/json"},
 body:JSON.stringify(actualizado)
