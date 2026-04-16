@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Aplicación De Transacciones</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+    
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <div class="header_top">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="logo_section">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                    </div>
+                    <div class="site_information">
+                        <ul>
+                            <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />exchang@gmail.com</a></li>
+                            <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+7123569847</a></li>
+                            <li><a class="join_bt" href="#">Contactenos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="header_bottom">
+          <div class="container">
+            <div class="col-sm-12">
+                <div class="menu_orange_section" style="background: #ff880e;">
+                   <nav class="navbar header-nav navbar-expand-lg"> 
+                     <div class="menu_section">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li><a class="nav-link" href="frmtransaction.html">Transacción</a></li>
+                        <li><a class="nav-link" href="frmcustomers.html">Cliente</a></li>
+                        <li><a class="nav-link" href="services.html">Historial</a></li>
+                    </ul>
+                </div>
+                     </div>
+                 </nav>
+                 <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Search">
+                    <a class="search-btn">
+                        <img src="images/search_icon.png" alt="#" />
+                    </a>
+                </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+        
+    </header>
+    <!-- End header -->
+
+        <!-- Start Banner -->
+    <div class="section inner_page_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner_title">
+                        <h3>Bienvenido</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Sección Registro de Cliente -->
+    <div class="section layout_padding about_bg">
+        <div class="container">
+            <div class="row">
+
+            
+                <!-- Formulario -->
+                 
+               <!-- Formulario -->
+   <!-- Sección Registro de Cliente -->
+<div class="section layout_padding about_bg">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 layout_padding">
+
+                <div class="full paddding_left_15">
+                    <div class="heading_main text_align_left">
+                        <h2><span class="theme_color">Registro</span> de Cliente</h2>
+                    </div>
+                </div>
+
+                <div class="full paddding_left_15">
+
+                    <form id="customerForm">
+
+                        <div class="form-group">
+                            <label for="firstName">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Apellido</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="accountNumber">Número de Cuenta</label>
+                            <input type="text" class="form-control" id="accountNumber" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="balance">Balance Inicial</label>
+                            <input type="number" step="0.01" class="form-control" id="balance" required>
+                        </div>
+
+                        <button type="submit" class="main_bt">
+                            Registrar Cliente
+                        </button>
+
+                    </form>
+
+                    <!-- MENSAJE DE RESPUESTA -->
+                    <div id="responseMessage" style="margin-top:20px;"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+document.getElementById("customerForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+Swal.fire({
+title: "Registrando cliente...",
+text: "Por favor espera",
+allowOutsideClick: false,
+didOpen: () => {
+Swal.showLoading();
+}
+});
+
+const customer = {
+
+firstName: document.getElementById("firstName").value,
+lastName: document.getElementById("lastName").value,
+accountNumber: document.getElementById("accountNumber").value,
+balance: parseFloat(document.getElementById("balance").value)
+
+};
+
+fetch("http://localhost:8080/api/customers",{
+
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body: JSON.stringify(customer)
+
+})
+
+.then(response => {
+
+if(!response.ok){
+throw new Error("Error");
+}
+
+return response.json();
+
+})
+
+.then(data =>{
+
+Swal.fire({
+icon:"success",
+title:"Cliente registrado",
+text:"El cliente fue creado correctamente",
+confirmButtonColor:"#28a745"
+});
+
+document.getElementById("customerForm").reset();
+
+})
+
+.catch(error =>{
+
+Swal.fire({
+icon:"error",
+title:"Error",
+text:"No se pudo registrar el cliente",
+confirmButtonColor:"#d33"
+});
+
+console.error(error);
+
+});
+
+});
+
+</script>
+    
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12 white_fonts">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <img class="img-responsive" src="images/footer_logo.png" alt="#" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3>Enlaces de regreso</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li><a href="index.html">> Hogar</a></li>
+                                    <li><a href="frmcustomers.html">> Usuario</a></li>
+                                    <li><a href="consultacustomer.html">> Consulta</a></li>
+                                    <li><a href="frmtransaction.html">> Transacción</a></li>
+                                    <li><a href="services.html">> Historico</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <div class="footer_blog full white_fonts">
+                             <h3>Contactenos</h3>
+                             <ul class="full">
+                               <li><img src="images/i5.png"><span>La Ceja<br>Colombia</span></li>
+                               <li><img src="images/i6.png"><span>demo@gmail.com</span></li>
+                               <li><img src="images/i7.png"><span>+12586954775</span></li>
+                             </ul>
+                         </div>
+                            </div>
+                        </div>
+					</div>
+                </div>
+			 </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© Copyrights 2019 design by html.design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
